@@ -6,11 +6,17 @@ I build and document machine-learning systems: **3D medical-image segmentation, 
 
 [**Portfolio**](https://aradmanamnaoon.github.io/) · [**Evidence-linked technical profile**](RESEARCH_PROFILE.md) · [**Download CV (PDF)**](https://aradmanamnaoon.github.io/Profile.pdf) · [**Hugging Face**](https://huggingface.co/aradmanamnaoon) · [**Writing**](https://aradmanamnaoon.github.io/blog/) · [**LinkedIn**](https://www.linkedin.com/in/seyyed-arad-hosseini-moghaddam)
 
-### Try a reproducible data-integrity demo
+### Three projects open for serious technical feedback
 
-**[Holdout Ledger — inspect train/test split leakage](https://github.com/aradmanamnaoon/Holdout-Ledger)** is an MIT-licensed, local Python workbench for text and declared-group split audits. Review record-level evidence and fingerprint-bound repair plans before changing a dataset, while preserving held-out test records. **[Try the synthetic, no-GPU/no-API-key walkthrough](https://github.com/aradmanamnaoon/Holdout-Ledger/blob/main/docs/first-run.md)** or [report a first-run problem](https://github.com/aradmanamnaoon/Holdout-Ledger/issues/new?template=first-run-feedback.yml).
+I'm highlighting **three distinct, publicly inspectable projects** rather than asking people to endorse a long list. If you have relevant experience, please inspect the actual artifact and share an honest, specific technical observation.
 
-It does not detect every kind of contamination and has **no independently verified external adoption or real-world detector performance** yet.
+| Project | What you can evaluate | Scope and evidence boundary |
+| --- | --- | --- |
+| **[Holdout Ledger](https://github.com/aradmanamnaoon/Holdout-Ledger)** · [three-minute synthetic walkthrough](https://github.com/aradmanamnaoon/Holdout-Ledger/blob/main/docs/first-run.md) | Local Python tool for cross-split text and declared-group leakage witnesses, offline reports and reviewed repairs | CI-tested synthetic example; not proven to find all leakage or validated on clinical datasets |
+| **[3D Cardiac MRI Segmentation](https://github.com/aradmanamnaoon/medical-image-segmentation)** · [case study](https://aradmanamnaoon.github.io/projects/3d-cardiac-mri-segmentation/) | PyTorch/MONAI left-atrium segmentation pipeline, preprocessing, training and sliding-window inference | Passing engineering checks; **0.8821 Dice is author-reported**, not independently reproduced or clinically validated |
+| **[PsyLex Studio](https://github.com/aradmanamnaoon/PsyLex-Studio)** · [Windows v0.6.5 release](https://github.com/aradmanamnaoon/PsyLex-Studio/releases/tag/v0.6.5) | Local-first English–Persian psychology terminology, translation, OCR and document workflows | Downloadable application; output needs human verification, and Python 3.13 installation CI currently needs attention |
+
+For candid feedback, use the project's GitHub Issues or [connect on LinkedIn](https://www.linkedin.com/in/seyyed-arad-hosseini-moghaddam). Please do **not** share confidential research, patient information or proprietary corpora in public issues. Recommendations should reflect **direct knowledge of my work**, not a request to promote or star a repository.
 
 
 
