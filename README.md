@@ -2,11 +2,13 @@
 
 **AI Engineer & Data Scientist** · `ARADMANAMNAOON`
 
-I build and evaluate applied AI systems across **agentic AI, RAG,
-language models, Persian NLP, medical AI, computer vision, and efficient
-fine-tuning**. My work spans the full ML lifecycle: data preparation,
-experimentation, model training, evaluation, deployment, observability,
-and iteration.
+I build machine-learning software spanning computer vision, medical imaging,
+natural-language processing, and agent-based retrieval. My published repositories
+and model cards document a PyTorch/MONAI cardiac MRI segmentation project,
+a research-assistant platform, data-leakage auditing tools, and Persian NLP model
+artifacts. I prioritize traceable evaluations, limitations, and reproducible
+research engineering; third-party adoption and experimental results are assessed
+per project rather than assumed.
 
 [Portfolio](https://aradmanamnaoon.github.io/) ·
 [Projects](https://aradmanamnaoon.github.io/projects/) · [Technical
@@ -29,39 +31,33 @@ Face](https://huggingface.co/aradmanamnaoon) ·
 
 ## Selected work
 
-  ----------------------------------------------------------------------------------------------------------------------------------
-  Project                                                                            What it demonstrates    Evidence
-  ---------------------------------------------------------------------------------- ----------------------- -----------------------
-  [AI Research Assistant                                                             LangGraph multi-agent   103 offline tests · 5
-  Platform](https://github.com/aradmanamnaoon/ai-research-assistant-platform)        orchestration, RAG,     agent roles
-                                                                                     tools, reflection,      
-                                                                                     persistence, LangSmith, 
-                                                                                     FastAPI, SSE, Docker    
+| Public artifact | Documented scope | Evidence boundary |
+| --- | --- | --- |
+| [AI Research Assistant Platform](https://github.com/aradmanamnaoon/ai-research-assistant-platform) | LangGraph multi-agent research workflow, retrieval, reflection, FastAPI, and evaluation utilities | README reports 103 offline tests; this profile does not independently verify CI or deployed answer quality. |
+| [Persian language model from scratch](https://huggingface.co/aradmanamnaoon/persian-lm-from-scratch) | Decoder-only Persian LM, tokenizer, training corpus, and evaluation documentation | Card reports test perplexity 14.52; metric and parameter count need reproducible independent checks before citation. |
+| [3D Cardiac MRI Segmentation](https://github.com/aradmanamnaoon/medical-image-segmentation) | MONAI/PyTorch 3D U-Net segmentation and sliding-window inference | README reports best validation Dice 0.8821; not independently reproduced or clinically validated. |
+| [Messy2JSON](https://huggingface.co/aradmanamnaoon/messy2json-qwen-0.5b) | QLoRA-based text-to-JSON extraction | Model card contains author-reported validation metrics; external reliability and schema-validity assessment are not established here. |
+| [NLLB English–Persian Psychology Translation](https://huggingface.co/aradmanamnaoon/nllb-en-fa-psych-translation) | Domain-focused EN→FA model adaptation | Training-data provenance and held-out BLEU/chrF/COMET are incomplete in the public model card. Not for clinical decisions. |
+| [Jibay2 Medical](https://huggingface.co/aradmanamnaoon/jibay2-medical-v2) | Experimental QLoRA medical-note summarization adapter | Author-reported validation loss is not a measure of clinical correctness; no formal medical validation is established. |
+| [CohortSeal](https://github.com/aradmanamnaoon/cohortseal) | Patient-group and exact-duplicate split auditing for medical imaging metadata | Synthetic benchmarks and audit rules do not establish clinical validation or external cohort performance. |
+| [Holdout Ledger](https://github.com/aradmanamnaoon/Holdout-Ledger) | Text/group leakage audits with preserved reviewable evaluation boundaries | README-reported test and coverage claims require inspection of corresponding CI evidence. |
 
-  [Persian GPT --- 110M From                                                         End-to-end              110.4M params · 244M
-  Scratch](https://huggingface.co/aradmanamnaoon/persian-lm-from-scratch)            language-model          tokens · test
-                                                                                     training: corpus,       perplexity 14.52
-                                                                                     tokenizer,              
-                                                                                     architecture, training  
-                                                                                     and evaluation          
+## Research direction and collaboration
 
-  [3D Cardiac MRI                                                                    PyTorch + MONAI 3D      best validation Dice
-  Segmentation](https://github.com/aradmanamnaoon/medical-image-segmentation)        U-Net medical-image     0.8821
-                                                                                     pipeline                
+I am developing a research direction in reproducible computational psychology
+and neuroscience, particularly scientific software, benchmark design,
+methodologically sound ML evaluation, and responsible data governance.
+This is a developing research interest, **not** a claim of formal research
+affiliation, a peer-reviewed publication, or independent clinical validation.
 
-  [Messy2JSON](https://huggingface.co/aradmanamnaoon/messy2json-qwen-0.5b)           QLoRA fine-tuning for   99.82% token accuracy ·
-                                                                                     text-to-JSON structured validation loss 0.0045
-                                                                                     extraction              
+### How to interpret this portfolio
 
-  [NLLB English → Persian Psychology                                                 Domain-focused          NLLB-200 distilled 600M
-  Translation](https://huggingface.co/aradmanamnaoon/nllb-en-fa-psych-translation)   English-to-Persian      adaptation
-                                                                                     machine translation     
-
-  [Jibay2 Medical](https://huggingface.co/aradmanamnaoon/jibay2-medical-v2)          Research-oriented       2,634 examples · best
-                                                                                     clinical-note           validation loss 1.4403
-                                                                                     summarization with      
-                                                                                     QLoRA                   
-  ----------------------------------------------------------------------------------------------------------------------------------
+These are traceable software and model artifacts. Repo ownership and self-reported
+validation results are not third-party scientific endorsements. For publication,
+research collaboration, or grant use, inspect the corresponding code, datasets,
+licenses, data splits, checkpoints, scripts, and independently verified results.
+Credit human contributors and disclose material AI-assisted work in the relevant
+project documentation.
 
 ## Public models & data
 
