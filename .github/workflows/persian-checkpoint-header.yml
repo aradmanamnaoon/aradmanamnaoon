@@ -1,0 +1,32 @@
+name: Audit public Persian LM checkpoint structure
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "audits/persian_checkpoint_header.py"
+      - ".github/workflows/persian-checkpoint-header.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  safetensors-header:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch and parse public safetensors header only
+        run: python audits/persian_checkpoint_header.py
+      - name: Publish count evidence as a CI artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: persian-lm-public-checkpoint-header
+          path: persian_checkpoint_header_report.json
+          retention-days: 90
+# Public model metadata only. Does not download entire weights or use untrusted remote code.
