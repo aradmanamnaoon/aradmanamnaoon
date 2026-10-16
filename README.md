@@ -4,7 +4,7 @@
 
 I build and document machine-learning systems: **3D medical-image segmentation, language models, agent-based research tools, and data-integrity software**. My developing academic interest is reproducible computational psychology and neuroscience.
 
-[**Portfolio**](https://aradmanamnaoon.github.io/) · [**Evidence-linked technical profile**](RESEARCH_PROFILE.md) · [**Hugging Face**](https://huggingface.co/aradmanamnaoon) · [**Writing**](https://aradmanamnaoon.github.io/blog/) · [**LinkedIn**](https://www.linkedin.com/in/seyyed-arad-hosseini-moghaddam)
+[**Portfolio**](https://aradmanamnaoon.github.io/) · [**Evidence-linked technical profile**](RESEARCH_PROFILE.md) · [**Download CV (PDF)**](https://aradmanamnaoon.github.io/Profile.pdf) · [**Hugging Face**](https://huggingface.co/aradmanamnaoon) · [**Writing**](https://aradmanamnaoon.github.io/blog/) · [**LinkedIn**](https://www.linkedin.com/in/seyyed-arad-hosseini-moghaddam)
 
 ---
 
