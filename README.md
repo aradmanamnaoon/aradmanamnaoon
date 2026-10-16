@@ -1,94 +1,47 @@
 # Seyyed Arad Hosseini Moghaddam
 
-**AI Engineer & Data Scientist** · `ARADMANAMNAOON`
+**AI Engineer & Data Scientist** · Medical Imaging · Persian NLP · Reliable ML Engineering
 
-I build machine-learning software spanning computer vision, medical imaging,
-natural-language processing, and agent-based retrieval. My published repositories
-and model cards document a PyTorch/MONAI cardiac MRI segmentation project,
-a research-assistant platform, data-leakage auditing tools, and Persian NLP model
-artifacts. I prioritize traceable evaluations, limitations, and reproducible
-research engineering; third-party adoption and experimental results are assessed
-per project rather than assumed.
+I build and document machine-learning systems: **3D medical-image segmentation, language models, agent-based research tools, and data-integrity software**. My developing academic interest is reproducible computational psychology and neuroscience.
 
-[Portfolio](https://aradmanamnaoon.github.io/) ·
-[Projects](https://aradmanamnaoon.github.io/projects/) · [Technical
-Writing](https://aradmanamnaoon.github.io/blog/) · [Hugging
-Face](https://huggingface.co/aradmanamnaoon) ·
-[LinkedIn](https://www.linkedin.com/in/seyyed-arad-hosseini-moghaddam)
+[**Portfolio**](https://aradmanamnaoon.github.io/) · [**Evidence-linked technical profile**](RESEARCH_PROFILE.md) · [**Hugging Face**](https://huggingface.co/aradmanamnaoon) · [**Writing**](https://aradmanamnaoon.github.io/blog/) · [**LinkedIn**](https://www.linkedin.com/in/seyyed-arad-hosseini-moghaddam)
 
-## What I work on
+---
 
--   **Agentic AI & RAG:** multi-agent workflows, retrieval, tool use,
-    reflection, persistence, evaluation, and observability.
--   **Language models:** training transformers from scratch, QLoRA/LoRA
-    fine-tuning, structured extraction, and machine translation.
--   **Persian NLP:** Persian language modeling, English-to-Persian
-    translation, tokenization, and dataset preparation.
--   **Medical AI:** 3D medical-image segmentation and research-oriented
-    clinical NLP.
--   **ML engineering:** PyTorch, Transformers, LangGraph, LangSmith,
-    FastAPI, Docker, ChromaDB, PEFT, TRL, and MONAI.
+## What I build
 
-## Selected work
-
-| Public artifact | Documented scope | Evidence boundary |
+| Focus | Public examples | Questions I care about |
 | --- | --- | --- |
-| [AI Research Assistant Platform](https://github.com/aradmanamnaoon/ai-research-assistant-platform) | LangGraph multi-agent research workflow, retrieval, reflection, FastAPI, and evaluation utilities | README reports 103 offline tests; this profile does not independently verify CI or deployed answer quality. |
-| [Persian language model from scratch](https://huggingface.co/aradmanamnaoon/persian-lm-from-scratch) | Decoder-only Persian LM, tokenizer, training corpus, and evaluation documentation | Card reports test perplexity 14.52; metric and parameter count need reproducible independent checks before citation. |
-| [3D Cardiac MRI Segmentation](https://github.com/aradmanamnaoon/medical-image-segmentation) | MONAI/PyTorch 3D U-Net segmentation and sliding-window inference | README reports best validation Dice 0.8821; not independently reproduced or clinically validated. |
-| [Messy2JSON](https://huggingface.co/aradmanamnaoon/messy2json-qwen-0.5b) | QLoRA-based text-to-JSON extraction | Model card contains author-reported validation metrics; external reliability and schema-validity assessment are not established here. |
-| [NLLB English–Persian Psychology Translation](https://huggingface.co/aradmanamnaoon/nllb-en-fa-psych-translation) | Domain-focused EN→FA model adaptation | Training-data provenance and held-out BLEU/chrF/COMET are incomplete in the public model card. Not for clinical decisions. |
-| [Jibay2 Medical](https://huggingface.co/aradmanamnaoon/jibay2-medical-v2) | Experimental QLoRA medical-note summarization adapter | Author-reported validation loss is not a measure of clinical correctness; no formal medical validation is established. |
-| [CohortSeal](https://github.com/aradmanamnaoon/cohortseal) | Patient-group and exact-duplicate split auditing for medical imaging metadata | Synthetic benchmarks and audit rules do not establish clinical validation or external cohort performance. |
-| [Holdout Ledger](https://github.com/aradmanamnaoon/Holdout-Ledger) | Text/group leakage audits with preserved reviewable evaluation boundaries | README-reported test and coverage claims require inspection of corresponding CI evidence. |
+| **Medical imaging** | [3D cardiac MRI segmentation](https://github.com/aradmanamnaoon/medical-image-segmentation) · [CohortSeal](https://github.com/aradmanamnaoon/cohortseal) | Are the datasets and evaluation boundaries defensible? |
+| **Models & Persian NLP** | [Persian GPT](https://huggingface.co/aradmanamnaoon/persian-lm-from-scratch) · [NLLB EN→FA psychology](https://huggingface.co/aradmanamnaoon/nllb-en-fa-psych-translation) · [Messy2JSON](https://huggingface.co/aradmanamnaoon/messy2json-qwen-0.5b) | What do training metrics actually establish—and what do they not? |
+| **Agentic AI & research software** | [AI Research Assistant](https://github.com/aradmanamnaoon/ai-research-assistant-platform) · [Agent Guardrails](https://github.com/aradmanamnaoon/agent-guardrails) | Can a workflow be audited, bounded and meaningfully evaluated? |
+| **Evaluation integrity** | [Holdout Ledger](https://github.com/aradmanamnaoon/Holdout-Ledger) · [CohortSeal](https://github.com/aradmanamnaoon/cohortseal) | Are train/test splits, group identities and data lineage protected? |
+| **Psychology-language tools** | [PsyLex Studio](https://github.com/aradmanamnaoon/PsyLex-Studio) | Can researchers inspect terminology sources and review model translations? |
 
-## Research direction and collaboration
+## Selected engineering evidence
 
-I am developing a research direction in reproducible computational psychology
-and neuroscience, particularly scientific software, benchmark design,
-methodologically sound ML evaluation, and responsible data governance.
-This is a developing research interest, **not** a claim of formal research
-affiliation, a peer-reviewed publication, or independent clinical validation.
+- **3D MRI segmentation:** The linked MONAI/PyTorch repository defines a two-class *background/left-atrium* U-Net experiment on the Medical Segmentation Decathlon Task02 Heart data. Its [training summary](https://github.com/aradmanamnaoon/medical-image-segmentation/blob/main/results/training_summary.txt) reports a best validation Dice of **0.8821 at epoch 92**. This is an *author-reported* score, not independently reproduced or clinically validated.
+- **Persian language model:** [Hugging Face artifact](https://huggingface.co/aradmanamnaoon/persian-lm-from-scratch) includes the author's corpus/tokenizer/training description and reported held-out evaluation. The exported model's parameter count and weight-tying status require reconciliation with a published community concern.
+- **Agent-based research platform:** [Repository](https://github.com/aradmanamnaoon/ai-research-assistant-platform) documents a LangGraph/FastAPI application, retrieval and deterministic offline tests. These verify software interfaces, **not** independently measured research-answer quality.
+- **Medical evaluation integrity:** [CohortSeal](https://github.com/aradmanamnaoon/cohortseal) checks patient-group and exact-duplicate boundaries in research metadata. Synthetic examples do **not** certify clinical validity or real-world adoption.
+- **Experimental medical NLP:** [Jibay2 adapter](https://huggingface.co/aradmanamnaoon/jibay2-medical-v2) documents model adaptation. It has **no established formal clinical validation**; training loss must not be presented as medical reliability.
 
-### How to interpret this portfolio
+## Tools and methods
 
-These are traceable software and model artifacts. Repo ownership and self-reported
-validation results are not third-party scientific endorsements. For publication,
-research collaboration, or grant use, inspect the corresponding code, datasets,
-licenses, data splits, checkpoints, scripts, and independently verified results.
-Credit human contributors and disclose material AI-assisted work in the relevant
-project documentation.
+**Deep learning & ML:** Python, PyTorch, MONAI, Hugging Face Transformers, PEFT, LoRA/QLoRA, computer vision, model evaluation.  
+**Agents & software:** LangGraph, RAG, LangChain, FastAPI, GitHub Actions, Docker, data pipelines and reproducibility tooling.  
+**Quantitative questions:** Statistics, data science for psychology and humanities datasets, experimental design and leakage-aware evaluation.
 
-## Public models & data
+## Research direction & collaboration
 
-My Hugging Face work includes Persian language modeling,
-English-to-Persian translation, structured extraction, clinical NLP,
-LoRA/QLoRA adapters, and a cleaned Persian Wikipedia dataset.
+I'm developing a research path at the intersection of **AI, psychology and neuroscience**. I'm interested in well-scoped contributions to reproducible scientific software, behavioral benchmarks, neuro/medical imaging tooling and transparent evaluation practices.
 
-**Hugging Face:**
-[huggingface.co/aradmanamnaoon](https://huggingface.co/aradmanamnaoon)
+A useful collaboration starts with a clear scientific question, genuine dataset rights, reproducible baselines, explicit limitations, and attribution of human and AI-assisted work. Current public projects are evidence of software/model artifacts—not a claim of academic affiliation, peer-reviewed publications, external clinical validation or independent adoption.
 
-## Technical writing
+**For technical detail and qualification of claims, see the [evidence-linked profile](RESEARCH_PROFILE.md).**
 
-I write first-hand engineering notes about model training, debugging,
-experiments, and the parts of ML projects that do not fit neatly into a
-README.
+---
 
-**Latest:** [A Hugging Face Gradient Accumulation Bug Almost Ruined My
-19-Hour NLLB Training
-Run](https://aradmanamnaoon.github.io/blog/hugging-face-nllb-gradient-accumulation-bug/)
+**Explore:** [Projects](https://aradmanamnaoon.github.io/projects/) · [Hugging Face models and datasets](https://huggingface.co/aradmanamnaoon) · [Technical articles](https://aradmanamnaoon.github.io/blog/)
 
-## Core stack
-
-`Python` · `PyTorch` · `Transformers` · `LangGraph` · `LangChain` ·
-`LangSmith` · `RAG` · `ChromaDB` · `FastAPI` · `Docker` · `PEFT` ·
-`QLoRA` · `TRL` · `MONAI`
-
-------------------------------------------------------------------------
-
-**Portfolio:**
-[aradmanamnaoon.github.io](https://aradmanamnaoon.github.io/)\
-**Projects:**
-[aradmanamnaoon.github.io/projects](https://aradmanamnaoon.github.io/projects/)\
-**Hugging Face:**
-[huggingface.co/aradmanamnaoon](https://huggingface.co/aradmanamnaoon)
+<sub>Last reviewed 2026-10-16 · Public artifacts and author-reported metrics are identified separately from independently verified scientific outcomes.</sub>
