@@ -32,7 +32,7 @@ I develop software and machine-learning artifacts across medical-image segmentat
 ### Persian GPT — language-model experiment
 [Model card](https://huggingface.co/aradmanamnaoon/persian-lm-from-scratch)
 - Public model and tokenizer artifacts describing from-scratch Persian Wikipedia language-model training and held-out evaluation.
-- Author reports test perplexity **14.52**. Exported model parameter count and weight tying have an unresolved discrepancy; claims should await a checkpoint audit.
+- Author reports test perplexity **14.52**. A [public pinned metadata audit](audits/PERSIAN_LM_HEADER_REPORT.md) counted **134,994,432 stored tensor elements** versus the card's 110.4M; this does not establish runtime weight tying or reproduce perplexity.
 
 ### Persian NLP, translation, and structured extraction
 [NLLB EN→FA psychology](https://huggingface.co/aradmanamnaoon/nllb-en-fa-psych-translation) · [Messy2JSON](https://huggingface.co/aradmanamnaoon/messy2json-qwen-0.5b) · [PsyLex Studio](https://github.com/aradmanamnaoon/PsyLex-Studio)
