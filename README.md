@@ -6,6 +6,14 @@ I build and document machine-learning systems: **3D medical-image segmentation, 
 
 [**Portfolio**](https://aradmanamnaoon.github.io/) · [**Evidence-linked technical profile**](RESEARCH_PROFILE.md) · [**Download CV (PDF)**](https://aradmanamnaoon.github.io/Profile.pdf) · [**Hugging Face**](https://huggingface.co/aradmanamnaoon) · [**Writing**](https://aradmanamnaoon.github.io/blog/) · [**LinkedIn**](https://www.linkedin.com/in/seyyed-arad-hosseini-moghaddam)
 
+### Try a reproducible data-integrity demo
+
+**[Holdout Ledger — inspect train/test split leakage](https://github.com/aradmanamnaoon/Holdout-Ledger)** is an MIT-licensed, local Python workbench for text and declared-group split audits. Review record-level evidence and fingerprint-bound repair plans before changing a dataset, while preserving held-out test records. **[Try the synthetic, no-GPU/no-API-key walkthrough](https://github.com/aradmanamnaoon/Holdout-Ledger/blob/main/docs/first-run.md)** or [report a first-run problem](https://github.com/aradmanamnaoon/Holdout-Ledger/issues/new?template=first-run-feedback.yml).
+
+It does not detect every kind of contamination and has **no independently verified external adoption or real-world detector performance** yet.
+
+
+
 ---
 
 ## What I build
