@@ -69,7 +69,7 @@ def main() -> None:
         count = math.prod(shape)
         total += count
         by_dtype[value.get("dtype", "?")] = by_dtype.get(value.get("dtype", "?"), 0) + count
-        if "lm_head" in k or "embed" in k or "wte" in k:
+        if any(fragment in k.lower() for fragment in ("lm_head", "head.weight", "embed", "wte", "tok_emb", "token")):
             names.append({"tensor": k, "shape": shape, "elements": count})
     report = {
         "repo": REPO,
